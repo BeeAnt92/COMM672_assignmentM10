@@ -231,6 +231,7 @@ body.home {
 }
 
 /* Contact Page */
+/* fix alignment for address */
 form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
