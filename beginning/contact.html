@@ -36,94 +36,96 @@
             </label>
         </div>
     </header>
-    <section class="container">
-        <h2>Contact Us</h2>
-        <address>
-            Purrfect Vibes HQ<br>
-            123 Whisker Lane<br>
-            Meowtown, CA 90210<br>
-            (555) 867-5309
-        </address>
-    </section>
-    <section class="container forms">
-        <p><em>Note:Fields highlighed in red are required</em></p>
-        <form action="#" method="post" name="contact">
-            <div class="form-group">
-                <label for="fname">First Name:</label>
-                <input type="text" name="fname" id="fname" required placeholder="First Name">
-            </div>
-            <div class="form-group">
-                <label for="lname">Last Name:</label>
-                <input type="text" name="lname" id="lname" required placeholder="Last Name">
-            </div>
-            <div class="form-group">
-                <label for="organization">Organization (If any):</label>
-                <input type="text" name="organization" id="organization" placeholder="Optional">
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" name="phone" id="phone" required placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 555-555-5555">
-            </div>
-            <div class="form-group full-width">
-                <label for="email">Email Address:</label>
-                <input type="email" name="email" id="email" required placeholder="example@domain.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-            </div>
-            <fieldset class="form-group">
-                <legend>Feline Interests:</legend>
-                <div class="inline-field">
-                    <input type="checkbox" name="interest" id="catWellness" value="catWellness">
-                    <label for="catWellness">Cat Wellness</label>
+    <div class="container contactGrid">
+        <section class="container">
+            <h2>Contact Us</h2>
+            <address>
+                Purrfect Vibes HQ<br>
+                123 Whisker Lane<br>
+                Meowtown, CA 90210<br>
+                (555) 867-5309
+            </address>
+        </section>
+        <section class="container forms">
+            <p><em>Note:Fields highlighed in red are required</em></p>
+            <form action="#" method="post" name="contact">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" required placeholder="First Name">
                 </div>
-                <div class="inline-field">
-                    <input type="checkbox" name="interest" id="catTraining" value="catTraining">
-                    <label for="catTraining">Cat Training</label>
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
                 </div>
-                <div class="inline-field">
-                    <input type="checkbox" name="interest" id="catAdoption" value="catAdoption">
-                    <label for="catAdoption">Cat Adopton</label>
+                <div class="form-group">
+                    <label for="organization">Organization (If any):</label>
+                    <input type="text" name="organization" id="organization" placeholder="Optional">
                 </div>
-            </fieldset>
-            <div class="form-group">
-                <label>Your Cat's Lifestyle</label>
-                <div class="inline-field">
-                    <input type="radio" name="lifestyle" id="indoorCat" value="indoorCat">
-                    <label for="indoorCat">Indoor Cat</label>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" required placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 555-555-5555">
                 </div>
-                <div class="inline-field">
-                    <input type="radio" name="lifestyle" id="outdoorCat" value="outdoorCat">
-                    <label for="outdoorCat">Outdoor Cat</label>
+                <div class="form-group full-width">
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" required placeholder="example@domain.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                 </div>
-                <div class="inline-field">
-                    <input type="radio" name="lifestyle" id="both" value="both">
-                    <label for="both">Both</label>
+                <fieldset class="form-group">
+                    <legend>Feline Interests:</legend>
+                    <div class="inline-field">
+                        <input type="checkbox" name="interest" id="catWellness" value="catWellness">
+                        <label for="catWellness">Cat Wellness</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" name="interest" id="catTraining" value="catTraining">
+                        <label for="catTraining">Cat Training</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" name="interest" id="catAdoption" value="catAdoption">
+                        <label for="catAdoption">Cat Adopton</label>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label>Your Cat's Lifestyle</label>
+                    <div class="inline-field">
+                        <input type="radio" name="lifestyle" id="indoorCat" value="indoorCat">
+                        <label for="indoorCat">Indoor Cat</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="radio" name="lifestyle" id="outdoorCat" value="outdoorCat">
+                        <label for="outdoorCat">Outdoor Cat</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="radio" name="lifestyle" id="both" value="both">
+                        <label for="both">Both</label>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group full-width">
-                <label for="count">How many cats do you have?</label>
-                <select name="count" id="count">
-                    <option value="0">None</option>
-                    <option value="1">1</option>
-                    <option value="2-3">2-3</option>
-                    <option value="4+">4+</option>
-                </select>
-            </div>
-            <div class="form-group full-width">
-                <label for="source">How did you hear about Purrfect Vibes?</label>
-                <select name="source" id="source" multiple size="2">
-                    <option value="Social Media">Social Media</option>
-                    <option value="Friends/Family">Friends/Family</option>
-                    <option value="Pet Shop">Pet Shop</option>
-                    <option value="Internet">Internet</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div class="form-group full-width">
-                <label for="comments">Questions or Purrs?</label>
-                <textarea name="comments" id="comments" placeholder="Share your thoughts with us!"></textarea>
-            </div>
-            <input type="submit" value="SUBMIT TO PURRFECT VIBES">
-        </form>
-    </section>
+                <div class="form-group full-width">
+                    <label for="count">How many cats do you have?</label>
+                    <select name="count" id="count">
+                        <option value="0">None</option>
+                        <option value="1">1</option>
+                        <option value="2-3">2-3</option>
+                        <option value="4+">4+</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="source">How did you hear about Purrfect Vibes?</label>
+                    <select name="source" id="source" multiple size="2">
+                        <option value="Social Media">Social Media</option>
+                        <option value="Friends/Family">Friends/Family</option>
+                        <option value="Pet Shop">Pet Shop</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="comments">Questions or Purrs?</label>
+                    <textarea name="comments" id="comments" placeholder="Share your thoughts with us!"></textarea>
+                </div>
+                <input type="submit" value="SUBMIT TO PURRFECT VIBES">
+            </form>
+        </section>
+    </div>
     <footer>
         <div>
             <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>

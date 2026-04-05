@@ -231,7 +231,16 @@ body.home {
 }
 
 /* Contact Page */
-/* fix alignment for address */
+/* Start Test */
+.contactGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+}
+h2 {
+    grid-column: ;
+}
+/* End Test */
 form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
