@@ -231,7 +231,7 @@ body.home {
 }
 
 /* Contact Page */
-/* Start Test */
+
 .container:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -258,12 +258,6 @@ form {
     grid-column: 3/6;
     gap: 1rem;
 }
-/* End Test */
-/* form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-} */
 .full-width {
     grid-column: span 2;
 }
@@ -468,5 +462,16 @@ footer img {
     } 
     .contact {
         text-align: center;
+    }    
+    .container:nth-child(2), form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .container address {
+        margin-right: auto;
+    }
+    input[type="submit"] {
+        align-self: stretch;
     }
 }
